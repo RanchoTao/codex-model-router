@@ -50,7 +50,7 @@ Do not use Astra as the mandatory classifier for every task. That adds an expens
 
 This repository ships 16 native Codex agent profiles: four reasoning levels for each model.
 
-| Model | low | medium | high | max |
+| Model | low | medium | high | xhigh |
 |---|---|---|---|---|
 | Luna | cmr_luna_low | cmr_luna_medium | cmr_luna_high | cmr_luna_max |
 | Terra | cmr_terra_low | cmr_terra_medium | cmr_terra_high | cmr_terra_max |
@@ -66,16 +66,16 @@ The router does not use all 16 equally. It prefers lower-cost routes and treats 
 | Mechanical edit, extraction, classification, formatting | Luna low |
 | Small scoped task with light reasoning | Luna medium |
 | Large bounded scan / repetitive synthesis | Luna high |
-| Tricky but tightly bounded work | Luna max |
+| Tricky but tightly bounded work | Luna xhigh |
 | Routine code/doc change | Terra low |
 | Normal implementation, analysis, debugging | Terra medium |
 | Multi-file debugging or review | Terra high |
-| Difficult but bounded domain work | Terra max |
+| Difficult but bounded domain work | Terra xhigh |
 | Complex feature or deep debugging | Sol low/medium |
 | Architecture, algorithms, research synthesis | Sol high |
-| Very difficult known-domain reasoning | Sol max |
+| Very difficult known-domain reasoning | Sol xhigh |
 | Unfamiliar, cross-domain, long-horizon task | Astra low/medium |
-| High ambiguity, repeated failures, hardest end-to-end work | Astra high/max |
+| High ambiguity, repeated failures, hardest end-to-end work | Astra high/xhigh |
 
 See .agents/skills/codex-model-router/references/routing-policy.md for the full policy.
 
@@ -90,7 +90,7 @@ Luna -> Terra -> Sol -> Astra
 Reasoning effort can rise before changing model when that is cheaper and likely to solve the problem:
 
 ~~~text
-low -> medium -> high -> max
+low -> medium -> high -> xhigh
 ~~~
 
 Escalate on evidence: repeated failures, unresolved ambiguity, expanding scope, deeper architectural/research complexity, or failed validation that the current worker cannot explain.
@@ -132,7 +132,7 @@ The user always wins. Examples:
 
     Use cmr_luna_low for this.
     Route this with Sol high.
-    Use Astra max; do not downgrade.
+    Use Astra xhigh; do not downgrade.
     Do not use model routing for this task.
 
 The Skill must not override an explicit user-selected model or effort.
