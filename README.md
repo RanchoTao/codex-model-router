@@ -48,14 +48,14 @@ Do not use Astra as the mandatory classifier for every task. That adds an expens
 
 ## Routing matrix
 
-This repository ships 16 native Codex agent profiles: four reasoning levels for each model.
+This repository ships 16 native Codex agent profiles: five reasoning levels for each model.
 
-| Model | low | medium | high | xhigh |
-|---|---|---|---|---|
-| Luna | cmr_luna_low | cmr_luna_medium | cmr_luna_high | cmr_luna_xhigh |
-| Terra | cmr_terra_low | cmr_terra_medium | cmr_terra_high | cmr_terra_xhigh |
-| Sol | cmr_sol_low | cmr_sol_medium | cmr_sol_high | cmr_sol_xhigh |
-| Astra | cmr_astra_low | cmr_astra_medium | cmr_astra_high | cmr_astra_xhigh |
+| Model | low | medium | high | xhigh | max |
+|---|---|---|---|---|---|
+| Luna | cmr_luna_low | cmr_luna_medium | cmr_luna_high | cmr_luna_xhigh | cmr_luna_max |
+| Terra | cmr_terra_low | cmr_terra_medium | cmr_terra_high | cmr_terra_xhigh | cmr_terra_max |
+| Sol | cmr_sol_low | cmr_sol_medium | cmr_sol_high | cmr_sol_xhigh | cmr_sol_max |
+| Astra | cmr_astra_low | cmr_astra_medium | cmr_astra_high | cmr_astra_xhigh | cmr_astra_max |
 
 The router does not use all 16 equally. It prefers lower-cost routes and treats higher-effort profiles as escalation points.
 
@@ -90,7 +90,7 @@ Luna -> Terra -> Sol -> Astra
 Reasoning effort can rise before changing model when that is cheaper and likely to solve the problem:
 
 ~~~text
-low -> medium -> high -> xhigh
+low -> medium -> high -> xhigh -> max
 ~~~
 
 Escalate on evidence: repeated failures, unresolved ambiguity, expanding scope, deeper architectural/research complexity, or failed validation that the current worker cannot explain.
