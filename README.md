@@ -52,10 +52,10 @@ This repository ships 16 native Codex agent profiles: four reasoning levels for 
 
 | Model | low | medium | high | xhigh |
 |---|---|---|---|---|
-| Luna | cmr_luna_low | cmr_luna_medium | cmr_luna_high | cmr_luna_max |
-| Terra | cmr_terra_low | cmr_terra_medium | cmr_terra_high | cmr_terra_max |
-| Sol | cmr_sol_low | cmr_sol_medium | cmr_sol_high | cmr_sol_max |
-| Astra | cmr_astra_low | cmr_astra_medium | cmr_astra_high | cmr_astra_max |
+| Luna | cmr_luna_low | cmr_luna_medium | cmr_luna_high | cmr_luna_xhigh |
+| Terra | cmr_terra_low | cmr_terra_medium | cmr_terra_high | cmr_terra_xhigh |
+| Sol | cmr_sol_low | cmr_sol_medium | cmr_sol_high | cmr_sol_xhigh |
+| Astra | cmr_astra_low | cmr_astra_medium | cmr_astra_high | cmr_astra_xhigh |
 
 The router does not use all 16 equally. It prefers lower-cost routes and treats higher-effort profiles as escalation points.
 
