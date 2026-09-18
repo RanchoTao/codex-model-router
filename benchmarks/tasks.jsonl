@@ -9,4 +9,4 @@
 {"id":"r009","task":"Design and justify an architecture migration with backward compatibility, rollout, observability, and recovery constraints.","expected_family":"sol","expected_effort":"high"}
 {"id":"r010","task":"Enter an unfamiliar large repository, identify why a cross-service workflow fails, patch it, and validate end-to-end behavior.","expected_family":"astra","expected_effort":"medium"}
 {"id":"r011","task":"Combine a novel mathematical argument, implementation plan, experiments, and literature verification for an unfamiliar research problem.","expected_family":"astra","expected_effort":"high"}
-{"id":"r012","task":"A Sol-xhigh agent made two distinct serious attempts at a complex end-to-end problem and both failed for unresolved conceptual reasons. Take over and finish it.","expected_family":"astra","expected_effort":"xhigh"}
+{"id":"r012","task":"A Sol-xhigh agent made two distinct serious attempts at a complex end-to-end problem and both failed for unresolved conceptual reasons. Take over and finish it.","expected_family":"astra","expected_effort":"max"}
