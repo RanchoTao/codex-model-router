@@ -29,9 +29,9 @@ Luna low -> Luna medium
 Luna high -> Terra low
 Terra medium -> Terra high
 Terra high -> Sol medium
-Sol high -> Sol xhigh
+Sol high -> Sol xhigh -> Sol max
 Sol xhigh -> Astra high
-Astra high -> Astra xhigh
+Astra high -> Astra xhigh -> Astra max
 ~~~
 
 Why it failed determines the next route:
