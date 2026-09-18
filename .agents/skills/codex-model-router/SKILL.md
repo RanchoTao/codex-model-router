@@ -45,7 +45,7 @@ Prefer structural evidence over keywords. A long prompt can still be easy; a sho
 
 ## Step 3: choose one initial route
 
-Choose exactly one installed profile from the Luna, Terra, Sol, or Astra family at low, medium, high, or xhigh effort.
+Choose exactly one installed profile from the Luna, Terra, Sol, or Astra family at low, medium, high, xhigh, or max effort.
 
 When two routes are plausible, choose the cheaper one unless failure would be unusually costly.
 
@@ -74,7 +74,7 @@ Luna -> Terra -> Sol -> Astra
 Within a family:
 
 ~~~text
-low -> medium -> high -> xhigh
+low -> medium -> high -> xhigh -> max
 ~~~
 
 Use judgment. A bounded logic problem may stay within one family while raising effort. A task that becomes cross-domain and ambiguous may move up a family.
