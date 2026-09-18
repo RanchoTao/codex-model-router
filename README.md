@@ -48,7 +48,7 @@ Do not use Astra as the mandatory classifier for every task. That adds an expens
 
 ## Routing matrix
 
-This repository ships 16 native Codex agent profiles: five reasoning levels for each model.
+This repository ships 20 native Codex agent profiles: five reasoning levels for each model.
 
 | Model | low | medium | high | xhigh | max |
 |---|---|---|---|---|---|
