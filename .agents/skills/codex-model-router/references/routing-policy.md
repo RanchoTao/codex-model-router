@@ -20,7 +20,10 @@ Small clear tasks with light reasoning: short summaries, obvious small code edit
 Bounded synthesis: large read-only scans, comparing many similar files, repetitive review checks, summarizing homogeneous artifacts.
 
 ### Luna xhigh
-Tricky but tightly constrained work where Luna is still appropriate. If ambiguity or architecture becomes important, move to Terra.
+Tricky but tightly constrained work where Luna is still appropriate.
+
+### Luna max
+Reserve for the hardest tightly bounded Luna-suitable work or an explicit user request. If ambiguity or architecture becomes important, move to Terra.
 
 ## Terra
 
@@ -34,7 +37,10 @@ Default standard engineering/professional work: feature implementation, ordinary
 Harder everyday work: multi-file debugging, edge-case review, integration issues, nontrivial state flows, complex but familiar analysis.
 
 ### Terra xhigh
-Difficult but bounded domain work. Escalate to Sol when broad planning, architecture, research synthesis, or substantial uncertainty resolution becomes central.
+Difficult but bounded domain work.
+
+### Terra max
+Use for the hardest bounded Terra-suitable work. Escalate to Sol when broad planning, architecture, research synthesis, or substantial uncertainty resolution becomes central.
 
 ## Sol
 
@@ -48,7 +54,10 @@ Default for genuinely complex work: architecture changes, long dependency chains
 Reasoning-heavy work: difficult algorithms, mathematical derivations, research methodology, subtle correctness analysis, complex systems design.
 
 ### Sol xhigh
-Hardest work still reasonably contained in a known domain: very deep debugging, proof-like reasoning, major architecture decisions, or Sol-high failures where depth is the main bottleneck.
+Very deep known-domain reasoning.
+
+### Sol max
+Hardest work still reasonably contained in a known domain: very deep debugging, proof-like reasoning, major architecture decisions, or Sol-xhigh failures where depth is the main bottleneck.
 
 ## Astra
 
@@ -62,7 +71,10 @@ Demanding end-to-end work: broad autonomous implementation, research plus engine
 Severe ambiguity or reasoning burden: multiple interacting unknowns, repeated Sol failures, difficult novel research/engineering problems.
 
 ### Astra xhigh
-Reserve for boundary-of-capability tasks, repeated high-quality failures below Astra xhigh, unusually difficult end-to-end work, or explicit user request.
+Use for severe ambiguity, novelty, or repeated Sol failures.
+
+### Astra max
+Reserve for boundary-of-capability tasks, repeated high-quality failures below Astra max, unusually difficult end-to-end work, or explicit user request.
 
 ## Tie-breakers
 
